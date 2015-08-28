@@ -8,6 +8,7 @@ use compact\routing\Router;
 use image\Imagehandler;
 
 use controllers\UploadController;
+use imagemanipulation\ImageBuilder;
 
 /**
  * The Application Context for elgervanboxtel.nl
@@ -47,16 +48,50 @@ class AppContext implements IAppContext
          * Options: rate:5|opacity:10
          */
         $router->add('^/img/([a-z]+)/?(.*)?/(.*\.[a-z]+)', function($filter, $optionsString, $image){
-        	$image = new \SplFileInfo(__DIR__ . '/img/' . $image);
+        	$image = Context::get()->basePath('/img/original/' . $image);
         	$controller = new \controllers\FilterController();
         	$method = str_replace(['-','_'], [''], $filter);
         	$options = $this->parseOptions($optionsString);
         	
         	if (method_exists($controller, $method)) {
-        	    return $controller->$method($image, $options);
+        	    // apply filters
+        	    $builder = $controller->$method($image, $options);
+        	    
+        	    // cache image
+        	    $this->cacheImage($builder, $filter, $optionsString, $image);
+        	    
+        	    return $builder;
         	}
         	throw new \Exception("Method " . $method . " not found on " . get_class($controller));
         });
+    }
+    
+    /**
+     * Store the image in the static cache
+     * 
+     * @param ImageBuilder $builder
+     * @param string $filter
+     * @param string $options
+     * @param \SplFileInfo $image
+     */
+    private function cacheImage(ImageBuilder $builder, $filter, $options, \SplFileInfo $image){
+        $cache = Context::get()->basePath('img');
+        
+        $filterDir = $cache . DIRECTORY_SEPARATOR . $filter;
+        if ( ! is_dir($filterDir)){
+            mkdir($filterDir, 0777);
+        }
+        
+        if ($options){
+            $filterOptionsDir = $filterDir . DIRECTORY_SEPARATOR . $options;
+            if ( ! is_dir($filterOptionsDir)){
+                mkdir($filterOptionsDir, 0777);
+            }
+        } else {
+            $filterOptionsDir = $filterDir;
+        }
+        
+        $builder->save(new \SplFileInfo($filterOptionsDir . DIRECTORY_SEPARATOR . $image->getFilename()));
     }
     
     /**
@@ -77,7 +112,7 @@ class AppContext implements IAppContext
         
         $result = array();
         foreach ($options as $value){
-            $o = explode(':', $value);
+            $o = explode('=', $value);
             $result[$o[0] ] = $o[1];
         }
         

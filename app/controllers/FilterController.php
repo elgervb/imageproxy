@@ -84,7 +84,7 @@ class FilterController {
      * @return string
      */
     private function option(array $options = null, $name, $default){
-        if (!$options){return;}
+        if (!$options){return $default;}
         if (isset($options[$name])){
             return $options[$name];
         }
