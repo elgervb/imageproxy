@@ -83,7 +83,8 @@ class FilterController {
      * 
      * @return string
      */
-    private function option(array $options, $name, $default){
+    private function option(array $options = null, $name, $default){
+        if (!$options){return;}
         if (isset($options[$name])){
             return $options[$name];
         }
