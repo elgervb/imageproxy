@@ -100,6 +100,12 @@ class FilterController {
         return ImageBuilder::create($img)->opacity($opacity);
     }
     
+    public function pixelate(\SplFileInfo $img, array $options = null){
+        $rate = $this->option($options, 'rate', '10');
+    
+        return ImageBuilder::create($img)->pixelate($rate);
+    }
+    
     public function original(\SplFileInfo $img){
         return ImageBuilder::create($img);
     }
