@@ -88,6 +88,12 @@ class FilterController {
         return ImageBuilder::create($img)->negative();
     }
     
+    public function noise(\SplFileInfo $img, array $options = null){
+        $rate = $this->option($options, 'rate', '20');
+        
+        return ImageBuilder::create($img)->noise($rate);
+    }
+    
     public function original(\SplFileInfo $img){
         return ImageBuilder::create($img);
     }
