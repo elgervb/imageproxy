@@ -65,6 +65,13 @@ class FilterController {
         return ImageBuilder::create($img)->flip($mode);
     }
     
+    public function gammacorrection(\SplFileInfo $img, array $options = null){
+        $input = $this->option($options, 'input', '1.0');
+        $output = $this->option($options, 'output', '1.537');
+        
+        return ImageBuilder::create($img)->gammaCorrection($input, $output);
+    }
+    
     public function original(\SplFileInfo $img){
         return ImageBuilder::create($img);
     }
@@ -83,7 +90,7 @@ class FilterController {
      * 
      * @return string
      */
-    private function option(array $options = null, $name, $default){
+    private function option(array $options, $name, $default){
         if (!$options){return $default;}
         if (isset($options[$name])){
             return $options[$name];
