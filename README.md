@@ -87,3 +87,17 @@ Parameter       |  Default  | Description
 ![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/comic/dog.jpg)
 ![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/comic/opacity=40/dog.jpg)
 ![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/comic/opacity=100/dog.jpg)
+
+
+
+### contrast
+Changes the contrast of the image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 5         | The opacity from -100 to 100, from minimal contrast to high constrast
+
+**Examples** <br />
+![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/contrast/dog.jpg)
+![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/contrast/rate=40/dog.jpg)
+![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/contrast/rate=-10/dog.jpg)
