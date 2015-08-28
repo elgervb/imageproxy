@@ -130,6 +130,10 @@ class FilterController {
         return ImageBuilder::create($img)->scatter($rate);
     }
     
+    public function selectiveblur(\SplFileInfo $img){
+        return ImageBuilder::create($img)->selectiveBlur();
+    }
+    
     /**
      * Retrieve the desired option, fallback to a default when it does not exist
      * 
