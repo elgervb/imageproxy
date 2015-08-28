@@ -94,6 +94,12 @@ class FilterController {
         return ImageBuilder::create($img)->noise($rate);
     }
     
+    public function opacity(\SplFileInfo $img, array $options = null){
+        $opacity = $this->option($options, 'opacity', '50');
+    
+        return ImageBuilder::create($img)->opacity($opacity);
+    }
+    
     public function original(\SplFileInfo $img){
         return ImageBuilder::create($img);
     }
