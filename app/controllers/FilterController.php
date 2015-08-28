@@ -154,6 +154,10 @@ class FilterController {
         return ImageBuilder::create($img)->smooth($rate);
     }
     
+    public function sobel(\SplFileInfo $img){
+        return ImageBuilder::create($img)->sobelEdgeDetect();
+    }
+    
     /**
      * Retrieve the desired option, fallback to a default when it does not exist
      * 
