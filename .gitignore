@@ -1,4 +1,4 @@
 /vendor/
-/app/img
-/app/log
+/app/logs
 /composer.lock
+/img
