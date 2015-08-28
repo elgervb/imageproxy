@@ -45,6 +45,8 @@ Parameter       |  Default  | Description
 ![Blocks Filter](http://elgervanboxtel.nl/imageproxy/img/blocks/dog.jpg)
 ![Blocks Filter](http://elgervanboxtel.nl/imageproxy/img/blocks/color=8D8942;size=10/dog.jpg)
 
+
+
 ### brightness
 Adjust the brightness of the image, either lighter or darker
 
@@ -56,3 +58,18 @@ Parameter       |  Default  | Description
 ![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/brightness/dog.jpg)
 ![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/brightness/rate=-40/dog.jpg)
 ![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/brightness/rate=100/dog.jpg)
+
+
+
+### colorize
+Blends a fill color with the image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*color*         | ffffff    | The color to blend
+*opacity*       | null      | The color opacity from 0 to 127
+
+**Examples** <br />
+![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/colorize/dog.jpg)
+![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/colorize/color=ff0000;opacity=100/dog.jpg)
+![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/colorize/color=00ff00;opacity=40/dog.jpg)
