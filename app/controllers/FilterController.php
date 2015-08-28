@@ -134,6 +134,12 @@ class FilterController {
         return ImageBuilder::create($img)->selectiveBlur();
     }
     
+    public function sepia(\SplFileInfo $img, array $options = null){
+        $rate = $this->option($options, 'rate', 15);
+        
+        return ImageBuilder::create($img)->sepia($rate);
+    }
+    
     /**
      * Retrieve the desired option, fallback to a default when it does not exist
      * 
