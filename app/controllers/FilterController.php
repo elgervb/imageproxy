@@ -6,6 +6,14 @@ use imagemanipulation\filter\ImageFilterFlip;
 
 class FilterController {
 
+    public function blocks(\SplFileInfo $img, array $options = null){
+        $number = $this->option($options, 'number', 100);
+        $size = $this->option($options, 'size', 25);
+        $color = $this->option($options, 'color', 'ffffff');
+        
+        return ImageBuilder::create($img)->randomBlocks($number, $size, $color);
+    }
+    
     public function brightness(\SplFileInfo $img, array $options = null){
         $rate = $this->option($options, 'rate', 20);
         return ImageBuilder::create($img)->brightness($rate);
@@ -100,15 +108,17 @@ class FilterController {
         return ImageBuilder::create($img)->opacity($opacity);
     }
     
+    public function original(\SplFileInfo $img){
+        return ImageBuilder::create($img);
+    }
+    
     public function pixelate(\SplFileInfo $img, array $options = null){
         $rate = $this->option($options, 'rate', '10');
     
         return ImageBuilder::create($img)->pixelate($rate);
     }
     
-    public function original(\SplFileInfo $img){
-        return ImageBuilder::create($img);
-    }
+   
     
     public function scatter(\SplFileInfo $img, array $options = null){
         $rate = $this->option($options, 'rate', 5);
