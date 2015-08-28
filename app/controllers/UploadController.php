@@ -30,7 +30,7 @@ class UploadController
             ->setAllowOverwrite(false)
             ->setMaxFiles(20)
             ->setMaxSize(5000000)
-            ->setUploadDir(Context::get()->basePath('app/img/'));
+            ->setUploadDir(Context::get()->basePath('/img/original'), true);
         $upload = new UploadManager($options);
         $view = $this->form();
         
