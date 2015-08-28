@@ -148,6 +148,12 @@ class FilterController {
         return ImageBuilder::create($img)->sharpen();
     }
     
+    public function smooth(\SplFileInfo $img, array $options = null){
+        $rate = $this->option($options, 'rate', 5);
+        
+        return ImageBuilder::create($img)->smooth($rate);
+    }
+    
     /**
      * Retrieve the desired option, fallback to a default when it does not exist
      * 
