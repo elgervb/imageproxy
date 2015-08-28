@@ -118,7 +118,12 @@ class FilterController {
         return ImageBuilder::create($img)->pixelate($rate);
     }
     
-   
+    public function rotate(\SplFileInfo $img, array $options = null){
+        $degrees = $this->option($options, 'degrees', '90');
+        $color = $this->option($options, 'color', 'ffffff');
+        
+        return ImageBuilder::create($img)->rotate($degrees, $color);
+    }
     
     public function scatter(\SplFileInfo $img, array $options = null){
         $rate = $this->option($options, 'rate', 5);
