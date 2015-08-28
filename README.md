@@ -44,3 +44,15 @@ Parameter       |  Default  | Description
 **Examples** <br />
 ![Blocks Filter](http://elgervanboxtel.nl/imageproxy/img/blocks/dog.jpg)
 ![Blocks Filter](http://elgervanboxtel.nl/imageproxy/img/blocks/color=8D8942;size=10/dog.jpg)
+
+### brightness
+Adjust the brightness of the image, either lighter or darker
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 20        | The brightness level from -255 to 255, from darker to lighter
+
+**Examples** <br />
+![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/brightness/dog.jpg)
+![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/brightness/rate=-40/dog.jpg)
+![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/brightness/rate=100/dog.jpg)
