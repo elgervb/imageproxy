@@ -80,6 +80,10 @@ class FilterController {
         return ImageBuilder::create($img)->meanremove();
     }
     
+    public function motionblur(\SplFileInfo $img){
+        return ImageBuilder::create($img)->motionBlur();
+    }
+    
     public function original(\SplFileInfo $img){
         return ImageBuilder::create($img);
     }
