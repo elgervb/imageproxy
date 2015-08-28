@@ -72,6 +72,10 @@ class FilterController {
         return ImageBuilder::create($img)->gammaCorrection($input, $output);
     }
     
+    public function gaussianblur(\SplFileInfo $img){
+        return ImageBuilder::create($img)->gaussianBlur();
+    }
+    
     public function original(\SplFileInfo $img){
         return ImageBuilder::create($img);
     }
