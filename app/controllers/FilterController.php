@@ -158,6 +158,10 @@ class FilterController {
         return ImageBuilder::create($img)->sobelEdgeDetect();
     }
     
+    public function vignette(\SplFileInfo $img){
+        return ImageBuilder::create($img)->vignette();
+    }
+    
     /**
      * Retrieve the desired option, fallback to a default when it does not exist
      * 
