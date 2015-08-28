@@ -140,6 +140,10 @@ class FilterController {
         return ImageBuilder::create($img)->sepia($rate);
     }
     
+    public function sepiafast(\SplFileInfo $img){
+        return ImageBuilder::create($img)->sepiaFast();
+    }
+    
     /**
      * Retrieve the desired option, fallback to a default when it does not exist
      * 
