@@ -6,10 +6,6 @@ use imagemanipulation\filter\ImageFilterFlip;
 
 class FilterController {
 
-    public function grayscale(\SplFileInfo $img){
-        return ImageBuilder::create($img)->grayscale();
-    }
-    
     public function brightness(\SplFileInfo $img, array $options = null){
         $rate = $this->option($options, 'rate', 20);
         return ImageBuilder::create($img)->brightness($rate);
@@ -74,6 +70,14 @@ class FilterController {
     
     public function gaussianblur(\SplFileInfo $img){
         return ImageBuilder::create($img)->gaussianBlur();
+    }
+    
+    public function grayscale(\SplFileInfo $img){
+        return ImageBuilder::create($img)->grayscale();
+    }
+    
+    public function meanremove(\SplFileInfo $img){
+        return ImageBuilder::create($img)->meanremove();
     }
     
     public function original(\SplFileInfo $img){
