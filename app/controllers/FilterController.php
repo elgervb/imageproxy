@@ -84,6 +84,10 @@ class FilterController {
         return ImageBuilder::create($img)->motionBlur();
     }
     
+    public function negative(\SplFileInfo $img){
+        return ImageBuilder::create($img)->negative();
+    }
+    
     public function original(\SplFileInfo $img){
         return ImageBuilder::create($img);
     }
