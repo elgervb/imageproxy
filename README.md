@@ -44,6 +44,7 @@ Parameter       |  Default  | Description
 **Examples** <br />
 ![Blocks Filter](http://elgervanboxtel.nl/imageproxy/img/blocks/dog.jpg)
 ![Blocks Filter](http://elgervanboxtel.nl/imageproxy/img/blocks/color=8D8942;size=10/dog.jpg)
+![Blocks Filter](http://elgervanboxtel.nl/imageproxy/img/blocks/color=000;size=60/dog.jpg)
 
 
 
