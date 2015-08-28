@@ -73,3 +73,17 @@ Parameter       |  Default  | Description
 ![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/colorize/dog.jpg)
 ![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/colorize/color=ff0000;opacity=100/dog.jpg)
 ![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/colorize/color=00ff00;opacity=40/dog.jpg)
+
+
+
+### comic
+Apply a sketchy comic filter to an image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*opacity*       | 40        | The opacity from 0 to 127
+
+**Examples** <br />
+![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/comic/dog.jpg)
+![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/comic/opacity=40/dog.jpg)
+![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/comic/opacity=100/dog.jpg)
