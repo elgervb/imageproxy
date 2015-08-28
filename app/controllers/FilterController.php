@@ -144,6 +144,10 @@ class FilterController {
         return ImageBuilder::create($img)->sepiaFast();
     }
     
+    public function sharpen(\SplFileInfo $img){
+        return ImageBuilder::create($img)->sharpen();
+    }
+    
     /**
      * Retrieve the desired option, fallback to a default when it does not exist
      * 
