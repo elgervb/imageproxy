@@ -32,7 +32,7 @@ class FilterController {
     }
     
     public function contrast(\SplFileInfo $img, array $options = null){
-        $rate = $this->option($options, 'rate', 20);
+        $rate = $this->option($options, 'rate', 5);
         return ImageBuilder::create($img)->contrast($rate);
     }
     
