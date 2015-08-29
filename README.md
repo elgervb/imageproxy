@@ -266,13 +266,33 @@ Parameter       |  Default  | Description
 Image filter Selective Blur
 
 **Examples** <br />
-![Scatter Filter](http://elgervanboxtel.nl/imageproxy/img/selectiveblur/dog.jpg)
+![Selective blur Filter](http://elgervanboxtel.nl/imageproxy/img/selectiveblur/dog.jpg)
 
 ###sepia
+Apply sepia to the image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 15        | the darken rate
+
+**Examples** <br />
+![Sepia Filter](http://elgervanboxtel.nl/imageproxy/img/sepia/dog.jpg)
+![Sepia Filter](http://elgervanboxtel.nl/imageproxy/img/sepia/rate=30/dog.jpg)
+![Sepia Filter](http://elgervanboxtel.nl/imageproxy/img/sepia/rate=60/dog.jpg)
 
 ###sepiafast
+Apply sepia to the image (fast)
+
+**Examples** <br />
+![Sepia fast Filter](http://elgervanboxtel.nl/imageproxy/img/sepiafast/dog.jpg)
+![Sepia fast Filter](http://elgervanboxtel.nl/imageproxy/img/sepiafast/rate=30/dog.jpg)
+![Sepia fast Filter](http://elgervanboxtel.nl/imageproxy/img/sepiafast/rate=60/dog.jpg)
 
 ###sharpen
+Sharpens the image
+
+**Examples** <br />
+![Sepia fast Filter](http://elgervanboxtel.nl/imageproxy/img/sharpen/dog.jpg)
 
 ###smooth
 
