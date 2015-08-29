@@ -247,8 +247,8 @@ Parameter       |  Default  | Description
 
 **Examples** <br />
 ![Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/rotate//dog.jpg)
-![Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate/degrees=180/dog.jpg)
-![Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate//degrees=45;color=f00/dog.jpg)
+![Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/rotate/degrees=180/dog.jpg)
+![Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/rotate//degrees=45;color=f00/dog.jpg)
 
 ###scatter
 Scatter pixels around in a random way
