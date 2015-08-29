@@ -295,7 +295,27 @@ Sharpens the image
 ![Sepia fast Filter](http://elgervanboxtel.nl/imageproxy/img/sharpen/dog.jpg)
 
 ###smooth
+Makes the image smoother.
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 5         | the darken rate
+
+**Examples** <br />
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/smooth/dog.jpg)
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/smooth/rate=15/dog.jpg)
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/smooth/rate=30/dog.jpg)
 
 ###sobel
+Sobel edge detect (extremely slow...)
+
+**Examples** <br />
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/sobel/dog.jpg)
 
 ###vignette
+Applies a darker mask around the edges of the image
+
+**Examples** <br />
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/vignette/dog.jpg)
+
+
