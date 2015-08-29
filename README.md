@@ -202,16 +202,71 @@ Create a negative of an image
 ![Gaussian Blur Filter](http://elgervanboxtel.nl/imageproxy/img/negative/dog.jpg)
 
 ###noise
+add noise to the image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 20        | The amount of noise to apply
+
+**Examples** <br />
+![Noise Filter](http://elgervanboxtel.nl/imageproxy/img/noise/dog.jpg)
+![Noise Filter](http://elgervanboxtel.nl/imageproxy/img/noise/rate=40/dog.jpg)
+![Noise Filter](http://elgervanboxtel.nl/imageproxy/img/noise/rate=80/dog.jpg)
 
 ###opacity
+Sets the opacity of an image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*opacity*       | 80        | A value between 0 and 127. 0 indicates completely opaque while 127 indicates completely transparent.
+
+**Examples** <br />
+![Opacity Filter](http://elgervanboxtel.nl/imageproxy/img/opacity/dog.jpg)
+![Opacity Filter](http://elgervanboxtel.nl/imageproxy/img/opacity/opacity=40/dog.jpg)
+![Opacity Filter](http://elgervanboxtel.nl/imageproxy/img/opacity/opacity=100/dog.jpg)
 
 ###pixelate
+Pixelate an image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 20        | the blocksize in pixels
+
+**Examples** <br />
+![Pixelate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate/rate=5/dog.jpg)
+![Pixelate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate/dog.jpg)
+![Pixelate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate/rate=60/dog.jpg)
 
 ###rotate
+Rotate an image over an angle
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*degrees*       | 90        | The degrees to rotate the image
+*color*         | null      | The background color to apply 
+
+**Examples** <br />
+![Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/rotate//dog.jpg)
+![Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate/degrees=180/dog.jpg)
+![Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate//degrees=45;color=f00/dog.jpg)
 
 ###scatter
+Scatter pixels around in a random way
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 5         | the scatter size in pixels
+
+**Examples** <br />
+![Scatter Filter](http://elgervanboxtel.nl/imageproxy/img/scatter/dog.jpg)
+![Scatter Filter](http://elgervanboxtel.nl/imageproxy/img/scatter/rate=10/dog.jpg)
+![Scatter Filter](http://elgervanboxtel.nl/imageproxy/img/scatter/rate=20/dog.jpg)
 
 ###selectiveblur
+Image filter Selective Blur
+
+**Examples** <br />
+![Scatter Filter](http://elgervanboxtel.nl/imageproxy/img/selectiveblur/dog.jpg)
 
 ###sepia
 
