@@ -128,24 +128,78 @@ Parameter       |  Default  | Description
 ![Dodge Filter Darker](http://elgervanboxtel.nl/imageproxy/img/dodge/rate=10/dog.jpg)
 
 ###edgedetect
+Uses edge detection to highlight the edges in the image
+
+**Examples** <br />
+![Edge detect Filter](http://elgervanboxtel.nl/imageproxy/img/edgedetect/dog.jpg)
 
 ###emboss
+Embosses the image
+
+**Examples** <br />
+![Edge detect Filter](http://elgervanboxtel.nl/imageproxy/img/emboss/dog.jpg)
 
 ###findedges
+Find the edges in an image without color loss
+
+**Examples** <br />
+![Edge detect Filter](http://elgervanboxtel.nl/imageproxy/img/findedges/dog.jpg)
 
 ###flip
+Flips an image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*mode*          | both      | Direction to fip: vertical, horizontal or both
+
+**Examples** <br />
+![Flip Filter](http://elgervanboxtel.nl/imageproxy/img/flip/dog.jpg)
+![Flip Filter Vertical](http://elgervanboxtel.nl/imageproxy/img/flip/mode=vertical/dog.jpg)
+![Flip Filter Horizontal](http://elgervanboxtel.nl/imageproxy/img/flip/mode=horizontal/dog.jpg)
 
 ###gammacorrection
+Applies gamma correction
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*input*         | 1.0       | Input
+*output*        | 1.537     | Output
+
+**Examples** <br />
+![Gamma Correction Filter](http://elgervanboxtel.nl/imageproxy/img/gammacorrection/dog.jpg)
+![Gamma Correction Vertical](http://elgervanboxtel.nl/imageproxy/img/gammacorrection/input=0.5;output=1/dog.jpg)
+![FlipGamma Correction Horizontal](http://elgervanboxtel.nl/imageproxy/img/gammacorrection/input=2;output=1/dog.jpg)
 
 ###gaussianblur
+Blurs the image using the Gaussian method.
+
+**Examples** <br />
+![Gaussian Blur Filter](http://elgervanboxtel.nl/imageproxy/img/gaussianblur/dog.jpg)
+
 
 ###grayscale
+Converts the colors to grayscale
+
+**Examples** <br />
+![Gaussian Blur Filter](http://elgervanboxtel.nl/imageproxy/img/grayscale/dog.jpg)
 
 ###meanremove
+Uses mean removal to achieve a "sketchy" effect
+
+**Examples** <br />
+![Gaussian Blur Filter](http://elgervanboxtel.nl/imageproxy/img/meanremove/dog.jpg)
 
 ###motionblur
+Motion blurs the image
+
+**Examples** <br />
+![Gaussian Blur Filter](http://elgervanboxtel.nl/imageproxy/img/motionblur/dog.jpg)
 
 ###negative
+Create a negative of an image
+
+**Examples** <br />
+![Gaussian Blur Filter](http://elgervanboxtel.nl/imageproxy/img/negative/dog.jpg)
 
 ###noise
 
