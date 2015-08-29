@@ -71,9 +71,9 @@ Parameter       |  Default  | Description
 *opacity*       | null      | The color opacity from 0 to 127
 
 **Examples** <br />
-![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/colorize/dog.jpg)
-![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/colorize/color=ff0000;opacity=100/dog.jpg)
-![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/colorize/color=00ff00;opacity=40/dog.jpg)
+![Colorize Filter](http://elgervanboxtel.nl/imageproxy/img/colorize/dog.jpg)
+![Colorize Filter red](http://elgervanboxtel.nl/imageproxy/img/colorize/color=ff0000;opacity=100/dog.jpg)
+![Colorize Filter green](http://elgervanboxtel.nl/imageproxy/img/colorize/color=00ff00;opacity=40/dog.jpg)
 
 
 
@@ -85,9 +85,9 @@ Parameter       |  Default  | Description
 *opacity*       | 40        | The opacity from 0 to 127
 
 **Examples** <br />
-![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/comic/dog.jpg)
-![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/comic/opacity=40/dog.jpg)
-![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/comic/opacity=100/dog.jpg)
+![Comic Filter](http://elgervanboxtel.nl/imageproxy/img/comic/dog.jpg)
+![Comic Filter](http://elgervanboxtel.nl/imageproxy/img/comic/opacity=40/dog.jpg)
+![Comic Filter](http://elgervanboxtel.nl/imageproxy/img/comic/opacity=100/dog.jpg)
 
 
 
@@ -99,54 +99,74 @@ Parameter       |  Default  | Description
 *rate*          | 5         | The opacity from -100 to 100, from minimal contrast to high constrast
 
 **Examples** <br />
-![Brightness Filter](http://elgervanboxtel.nl/imageproxy/img/contrast/dog.jpg)
-![Brightness Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/contrast/rate=40/dog.jpg)
-![Brightness Filter Darker](http://elgervanboxtel.nl/imageproxy/img/contrast/rate=-10/dog.jpg)
+![Contrast Filter](http://elgervanboxtel.nl/imageproxy/img/contrast/dog.jpg)
+![Contrast Filter](http://elgervanboxtel.nl/imageproxy/img/contrast/rate=40/dog.jpg)
+![Contrast Filter](http://elgervanboxtel.nl/imageproxy/img/contrast/rate=-10/dog.jpg)
 
-#darken
+###darken
+Adjust the brightness of the image, either darker or lighter
 
-#dodge
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 20        | The brightness level from -255 to 255, from lighter to darker
 
-#edgedetect
+**Examples** <br />
+![Darken Filter](http://elgervanboxtel.nl/imageproxy/img/darken/dog.jpg)
+![Darken Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/darken/rate=-40/dog.jpg)
+![Darken Filter Darker](http://elgervanboxtel.nl/imageproxy/img/darken/rate=100/dog.jpg)
 
-#emboss
+###dodge
+Dodge an image, resulting in a darker image
 
-#findedges
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 75        | The dodge level between 0 and 100
 
-#flip
+**Examples** <br />
+![Dodge Filter](http://elgervanboxtel.nl/imageproxy/img/dodge/dog.jpg)
+![Dodge Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/dodge/rate=40/dog.jpg)
+![Dodge Filter Darker](http://elgervanboxtel.nl/imageproxy/img/dodge/rate=10/dog.jpg)
 
-#gammacorrection
+###edgedetect
 
-#gaussianblur
+###emboss
 
-#grayscale
+###findedges
 
-#meanremove
+###flip
 
-#motionblur
+###gammacorrection
 
-#negative
+###gaussianblur
 
-#noise
+###grayscale
 
-#opacity
+###meanremove
 
-#pixelate
+###motionblur
 
-#rotate
+###negative
 
-#scatter
+###noise
 
-#selectiveblur
+###opacity
 
-#sepia
+###pixelate
 
-#sepiafast
+###rotate
 
-#sharpen
+###scatter
 
-#smooth
+###selectiveblur
 
-#sobel
+###sepia
 
-#vignette
+###sepiafast
+
+###sharpen
+
+###smooth
+
+###sobel
+
+###vignette
