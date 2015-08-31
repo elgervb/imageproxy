@@ -75,18 +75,18 @@ Blends a fill color with the image
 
 Parameter       |  Default  | Description
 ----------------|-----------|---------------------------
-*color*         | ffffff    | The color to blend
+*color*         | ffffff    | The color to blend, either in hexadecimal or rgb(a)
 *opacity*       | null      | The color opacity from 0 to 127
 
 **Examples** <br />
 ![Colorize Filter](http://elgervanboxtel.nl/imageproxy/img/colorize/dog.jpg)
 ![Colorize Filter red](http://elgervanboxtel.nl/imageproxy/img/colorize/color=ff0000;opacity=100/dog.jpg)
-![Colorize Filter green](http://elgervanboxtel.nl/imageproxy/img/colorize/color=00ff00;opacity=40/dog.jpg)
+![Colorize Filter green](http://elgervanboxtel.nl/imageproxy/img/colorize/color=rgba(0,255,0,40)/dog.jpg)
 
 *URL* <br />
 /imageproxy/img/colorize/dog.jpg <br />
 /imageproxy/img/colorize/color=ff0000;opacity=100/dog.jpg <br />
-/imageproxy/img/colorize/color=00ff00;opacity=40/dog.jpg <br />
+/imageproxy/img/colorize/colorcolor=rgba(0,255,0,40)/dog.jpg <br />
 
 
 ### comic
