@@ -324,7 +324,7 @@ Parameter       |  Default  | Description
 **Examples** <br />
 ![Pixelate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate/rate=5/dog.jpg)
 ![Pixelate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate/dog.jpg)
-![Pixelate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate/rate=60/dog.jpg)
+![Pixelate Filter](http://elgervanboxtel.nl/imageproxy/img/pixelate/rate=63/dog.jpg)
 
 *URL* <br />
 /imageproxy/img/pixelate/rate=5/dog.jpg <br />
