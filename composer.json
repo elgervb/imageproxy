@@ -1,6 +1,6 @@
 {
 	"name" : "test",
 	"require" : {
-		"elgervb/imagemanipulation": "^1.0"
+		"elgervb/imagemanipulation" : "1.2.0"
 	}
 }
