@@ -398,7 +398,7 @@ Parameter       |  Default  | Description
 
 
 ###semigrayscale
-Apply sepia to the image
+Applies grayscale to an image, optionally add a grayscale percentage
 
 Parameter       |  Default  | Description
 ----------------|-----------|---------------------------
@@ -463,6 +463,26 @@ Sobel edge detect (extremely slow...)
 
 *URL* <br />
 /imageproxy/img/sobel/dog.jpg <br />
+
+
+###truecolor
+Makes the image smoother.
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*primary*       | ffffff    | the primary color
+*secundary*     | 000000    | the secundary color
+
+
+**Examples** <br />
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/truecolor/dog.jpg)
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/truecolor/primary=B7121D;secundary=5774DB/dog.jpg)
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/truecolor/primary=C1C1C1;secundary=44C4BD/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/truecolor/dog.jpg <br />
+/imageproxy/img/truecolor/primary=B7121D;secundary=5774DB/dog.jpg <br />
+/imageproxy/img/truecolor/primary=C1C1C1;secundary=44C4BD/dog.jpg <br />
 
 
 ###vignette
