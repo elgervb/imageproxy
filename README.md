@@ -397,6 +397,24 @@ Parameter       |  Default  | Description
 /imageproxy/img/sepia/rate=60/dog.jpg <br />
 
 
+###semigrayscale
+Apply sepia to the image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 75        | The grayscale rate
+
+**Examples** <br />
+![Sepia Filter](http://elgervanboxtel.nl/imageproxy/img/semigrayscale/dog.jpg)
+![Sepia Filter](http://elgervanboxtel.nl/imageproxy/img/semigrayscale/rate=20/dog.jpg)
+![Sepia Filter](http://elgervanboxtel.nl/imageproxy/img/semigrayscale/rate=90/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/semigrayscale/dog.jpg <br />
+/imageproxy/img/semigrayscale/rate=30/dog.jpg <br />
+/imageproxy/img/semigrayscale/rate=60/dog.jpg <br />
+
+
 ###sepiafast
 Apply sepia to the image (fast)
 

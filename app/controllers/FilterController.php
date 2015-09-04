@@ -135,6 +135,11 @@ class FilterController {
         return ImageBuilder::create($img)->selectiveBlur();
     }
     
+    public function semigrayscale(\SplFileInfo $img, array $options = null){
+        $rate = $this->option($options, 'rate', 75);
+        return ImageBuilder::create($img)->semiGrayscale($rate);
+    }
+    
     public function sepia(\SplFileInfo $img, array $options = null){
         $rate = $this->option($options, 'rate', 15);
         
