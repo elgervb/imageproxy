@@ -117,6 +117,10 @@ class FilterController {
         return ImageBuilder::create($img)->noise($rate);
     }
     
+    public function oldcardboard(\SplFileInfo $img){
+        return ImageBuilder::create($img)->oldCardboard();
+    }
+    
     public function opacity(\SplFileInfo $img, array $options = null){
         $opacity = $this->option($options, 'opacity', '50');
     
