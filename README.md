@@ -465,6 +465,16 @@ Sobel edge detect (extremely slow...)
 /imageproxy/img/sobel/dog.jpg <br />
 
 
+###sobeledge
+Sobel edge enhance
+
+**Examples** <br />
+![Sobel Edge Detect Filter](http://elgervanboxtel.nl/imageproxy/img/sobeledge/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/sobeledge/dog.jpg <br />
+
+
 ###truecolor
 Makes the image smoother.
 

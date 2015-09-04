@@ -164,6 +164,10 @@ class FilterController {
         return ImageBuilder::create($img)->sobelEdgeDetect();
     }
     
+    public function sobeledge(\SplFileInfo $img){
+        return ImageBuilder::create($img)->sobelEdgeEnhance();
+    }
+    
     public function truecolor(\SplFileInfo $img, array $options = null){
         $primary = $this->option($options, 'primary', 'FFFFFF');
         $secundary = $this->option($options, 'secundary', '000000');
