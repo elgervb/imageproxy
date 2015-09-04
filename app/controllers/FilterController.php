@@ -93,6 +93,12 @@ class FilterController {
         return ImageBuilder::create($img)->grayscale();
     }
     
+    public function huerotate(\SplFileInfo $img, array $options = null){
+        $degrees = $this->option($options, 'degrees', '90');
+        
+        return ImageBuilder::create($img)->hueRotate($degrees);
+    }
+    
     public function meanremove(\SplFileInfo $img){
         return ImageBuilder::create($img)->meanremove();
     }

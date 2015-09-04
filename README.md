@@ -268,6 +268,24 @@ Converts the colors to grayscale
 /imageproxy/img/grayscale/dog.jpg <br />
 
 
+###huerotate
+Rotete the hue of the image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rotate*        | 90        | degrees to rotate
+
+**Examples** <br />
+![Hue Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/huerotate/dog.jpg)
+![Hue Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/huerotate/rotate=20/dog.jpg)
+![Hue Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/huerotate/rotate=270/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/huerotate/dog.jpg <br />
+/imageproxy/img/huerotate/red=40/dog.jpg <br />
+/imageproxy/img/huerotate/green=10;blue=90/dog.jpg <br />
+
+
 ###meanremove
 Uses mean removal to achieve a "sketchy" effect
 
