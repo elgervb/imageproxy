@@ -334,6 +334,16 @@ Parameter       |  Default  | Description
 /imageproxy/img/noise/rate=80/dog.jpg <br />
 
 
+###oldcardboard
+Image filter to give the image an old cardboard look
+
+**Examples** <br />
+![Gaussian Blur Filter](http://elgervanboxtel.nl/imageproxy/img/oldcardboard/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/oldcardboard/dog.jpg <br />
+
+
 ###opacity
 Sets the opacity of an image
 
