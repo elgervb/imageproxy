@@ -161,6 +161,26 @@ Parameter       |  Default  | Description
 /imageproxy/img/dodge/rate=10/dog.jpg <br />
 
 
+###duotone
+Duotone filter. Enhances Red, Green or Blue or a combination
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*red*           | 0         | The amount of red to add max = 255
+*green*         | 0         | The amount of green to add max = 255
+*blue*          | 0         | The amount of blue to add max = 255
+
+**Examples** <br />
+![Dodge Filter](http://elgervanboxtel.nl/imageproxy/img/duotone/dog.jpg)
+![Dodge Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/duotone/red=40/dog.jpg)
+![Dodge Filter Darker](http://elgervanboxtel.nl/imageproxy/img/duotone/green=10;blue=90/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/duotone/dog.jpg <br />
+/imageproxy/img/duotone/red=40/dog.jpg <br />
+/imageproxy/img/duotone/green=10;blue=90/dog.jpg <br />
+
+
 ###edgedetect
 Uses edge detection to highlight the edges in the image
 

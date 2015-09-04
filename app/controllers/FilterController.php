@@ -46,6 +46,14 @@ class FilterController {
         return ImageBuilder::create($img)->dodge($rate);
     }
     
+    public function duotone(\SplFileInfo $img, array $options = null){
+        $red = $this->option($options, 'red', 0);
+        $green = $this->option($options, 'green', 0);
+        $blue = $this->option($options, 'blue', 0);
+        
+        return ImageBuilder::create($img)->duotone($red, $green, $blue);
+    }
+    
     public function edgedetect(\SplFileInfo $img){
         return ImageBuilder::create($img)->edgeDetect();
     }
