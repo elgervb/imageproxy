@@ -41,8 +41,9 @@ class FilterController {
         return ImageBuilder::create($img)->darken(20);
     }
     
-    public function dodge(\SplFileInfo $img){
-        return ImageBuilder::create($img)->dodge();
+    public function dodge(\SplFileInfo $img, array $options = null){
+        $rate = $this->option($options, 'rate', 75);
+        return ImageBuilder::create($img)->dodge($rate);
     }
     
     public function edgedetect(\SplFileInfo $img){
