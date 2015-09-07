@@ -66,13 +66,23 @@ class FilterController {
         return ImageBuilder::create($img)->findEdges();
     }
     
+    /**
+     * Flip an image
+     * 
+     * @param \SplFileInfo $img
+     * @param array $options mode = horizontal | vertical | both
+     * 
+     * @return \imagemanipulation\ImageBuilder
+     */
     public function flip(\SplFileInfo $img, array $options = null){
         $mode = ImageFilterFlip::FLIP_BOTH;
         if (isset($options['mode'])){
             if ($options['mode'] === 'vertical'){
                 $mode = ImageFilterFlip::FLIP_VERTICALLY;
-            }else if ($options['mode'] === 'horizontal'){
+            } else if ($options['mode'] === 'horizontal'){
                 $mode = ImageFilterFlip::FLIP_HORIZONTALLY;
+            } else if ($options['mode'] === 'both'){
+                $mode = ImageFilterFlip::FLIP_BOTH;
             }
         }
         return ImageBuilder::create($img)->flip($mode);

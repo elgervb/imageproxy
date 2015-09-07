@@ -219,7 +219,7 @@ Parameter       |  Default  | Description
 *mode*          | both      | Direction to fip: vertical, horizontal or both
 
 **Examples** <br />
-![Flip Filter](http://elgervanboxtel.nl/imageproxy/img/flip/dog.jpg)
+![Flip Filter](http://elgervanboxtel.nl/imageproxy/img/flip/mode=both/dog.jpg)
 ![Flip Filter Vertical](http://elgervanboxtel.nl/imageproxy/img/flip/mode=vertical/dog.jpg)
 ![Flip Filter Horizontal](http://elgervanboxtel.nl/imageproxy/img/flip/mode=horizontal/dog.jpg)
 
