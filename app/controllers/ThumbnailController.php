@@ -29,4 +29,12 @@ class ThumbnailController
     
         return ImageBuilder::create($image)->thumbMax($width, $height);
     }
+    
+    public function percentage(SplFileInfo $image, array $options = null){
+    
+        // TODO cast to int workaround for https://github.com/elgervb/imagemanipulation/issues/25
+        $percentage = (int) Options::option($options, 'percentage', '50');
+    
+        return ImageBuilder::create($image)->thumbPercentage($percentage);
+    }
 }
