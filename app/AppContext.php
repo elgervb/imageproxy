@@ -41,10 +41,37 @@ class AppContext implements IAppContext
             return UploadController::create()->upload();
         }, 'POST');
         
+        /**
+         * Returns the requested image with filter applied
+         *
+         * Url: /img/thumb/center/width=500;height=500/img.png
+         * Options: rate:5|opacity:10
+         */
+        $router->add('^/img/thumb/([a-z]+)/?(.*)?/(.*\.[a-z]+)', function($filter, $optionsString, $image){
+        
+            ini_set('max_execution_time', 180);
+        
+            $image = Context::get()->basePath('/img/original/' . $image);
+            $controller = new \controllers\ThumbnailController();
+            $method = str_replace(['-','_'], [''], $filter);
+            $options = $this->parseOptions($optionsString);
+             
+            if (method_exists($controller, $method)) {
+                // apply filters
+                $builder = $controller->$method($image, $options);
+                 
+                // cache image
+                $this->cacheImage($builder, $filter, $optionsString, $image);
+                 
+                return $builder;
+            }
+            throw new \Exception("Method " . $method . " not found on " . get_class($controller));
+        });
         
         /**
-         * Returns the requested image
+         * Returns the requested image with filter applied
          * 
+         * Url: /img/[filter]/[option=value;option=value]/img.png
          * Options: rate:5|opacity:10
          */
         $router->add('^/img/([a-z]+)/?(.*)?/(.*\.[a-z]+)', function($filter, $optionsString, $image){
@@ -67,6 +94,7 @@ class AppContext implements IAppContext
         	}
         	throw new \Exception("Method " . $method . " not found on " . get_class($controller));
         });
+        
     }
     
     /**
