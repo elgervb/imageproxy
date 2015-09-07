@@ -42,7 +42,7 @@ class AppContext implements IAppContext
         }, 'POST');
         
         /**
-         * Returns the requested image with filter applied
+         * Returns the requested image with thumb applied
          *
          * Url: /img/thumb/center/width=500;height=500/img.png
          * Options: rate:5|opacity:10
@@ -61,7 +61,7 @@ class AppContext implements IAppContext
                 $builder = $controller->$method($image, $options);
                  
                 // cache image
-                $this->cacheImage($builder, $filter, $optionsString, $image);
+                $this->cacheImage($builder, 'thumb' . DIRECTORY_SEPARATOR . $filter, $optionsString, $image);
                  
                 return $builder;
             }
@@ -110,7 +110,7 @@ class AppContext implements IAppContext
         
         $filterDir = $cache . DIRECTORY_SEPARATOR . $filter;
         if ( ! is_dir($filterDir)){
-            mkdir($filterDir, 0777);
+            mkdir($filterDir, 0777, true);
         }
         
         if ($options){
