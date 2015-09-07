@@ -41,8 +41,17 @@ class FilterController {
         return ImageBuilder::create($img)->darken(20);
     }
     
-    public function dodge(\SplFileInfo $img){
-        return ImageBuilder::create($img)->dodge();
+    public function dodge(\SplFileInfo $img, array $options = null){
+        $rate = $this->option($options, 'rate', 75);
+        return ImageBuilder::create($img)->dodge($rate);
+    }
+    
+    public function duotone(\SplFileInfo $img, array $options = null){
+        $red = $this->option($options, 'red', 0);
+        $green = $this->option($options, 'green', 0);
+        $blue = $this->option($options, 'blue', 0);
+        
+        return ImageBuilder::create($img)->duotone($red, $green, $blue);
     }
     
     public function edgedetect(\SplFileInfo $img){
@@ -84,6 +93,12 @@ class FilterController {
         return ImageBuilder::create($img)->grayscale();
     }
     
+    public function huerotate(\SplFileInfo $img, array $options = null){
+        $degrees = $this->option($options, 'degrees', '90');
+        
+        return ImageBuilder::create($img)->hueRotate($degrees);
+    }
+    
     public function meanremove(\SplFileInfo $img){
         return ImageBuilder::create($img)->meanremove();
     }
@@ -100,6 +115,10 @@ class FilterController {
         $rate = $this->option($options, 'rate', '20');
         
         return ImageBuilder::create($img)->noise($rate);
+    }
+    
+    public function oldcardboard(\SplFileInfo $img){
+        return ImageBuilder::create($img)->oldCardboard();
     }
     
     public function opacity(\SplFileInfo $img, array $options = null){
@@ -134,6 +153,11 @@ class FilterController {
         return ImageBuilder::create($img)->selectiveBlur();
     }
     
+    public function semigrayscale(\SplFileInfo $img, array $options = null){
+        $rate = $this->option($options, 'rate', 75);
+        return ImageBuilder::create($img)->semiGrayscale($rate);
+    }
+    
     public function sepia(\SplFileInfo $img, array $options = null){
         $rate = $this->option($options, 'rate', 15);
         
@@ -156,6 +180,17 @@ class FilterController {
     
     public function sobel(\SplFileInfo $img){
         return ImageBuilder::create($img)->sobelEdgeDetect();
+    }
+    
+    public function sobeledge(\SplFileInfo $img){
+        return ImageBuilder::create($img)->sobelEdgeEnhance();
+    }
+    
+    public function truecolor(\SplFileInfo $img, array $options = null){
+        $primary = $this->option($options, 'primary', 'FFFFFF');
+        $secundary = $this->option($options, 'secundary', '000000');
+    
+        return ImageBuilder::create($img)->truecolor($primary, $secundary);
     }
     
     public function vignette(\SplFileInfo $img){

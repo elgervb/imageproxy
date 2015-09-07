@@ -161,6 +161,26 @@ Parameter       |  Default  | Description
 /imageproxy/img/dodge/rate=10/dog.jpg <br />
 
 
+###duotone
+Duotone filter. Enhances Red, Green or Blue or a combination
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*red*           | 0         | The amount of red to add max = 255
+*green*         | 0         | The amount of green to add max = 255
+*blue*          | 0         | The amount of blue to add max = 255
+
+**Examples** <br />
+![Dodge Filter](http://elgervanboxtel.nl/imageproxy/img/duotone/dog.jpg)
+![Dodge Filter Lighter](http://elgervanboxtel.nl/imageproxy/img/duotone/red=40/dog.jpg)
+![Dodge Filter Darker](http://elgervanboxtel.nl/imageproxy/img/duotone/green=10;blue=90/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/duotone/dog.jpg <br />
+/imageproxy/img/duotone/red=40/dog.jpg <br />
+/imageproxy/img/duotone/green=10;blue=90/dog.jpg <br />
+
+
 ###edgedetect
 Uses edge detection to highlight the edges in the image
 
@@ -248,6 +268,24 @@ Converts the colors to grayscale
 /imageproxy/img/grayscale/dog.jpg <br />
 
 
+###huerotate
+Rotete the hue of the image
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rotate*        | 90        | degrees to rotate
+
+**Examples** <br />
+![Hue Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/huerotate/dog.jpg)
+![Hue Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/huerotate/rotate=20/dog.jpg)
+![Hue Rotate Filter](http://elgervanboxtel.nl/imageproxy/img/huerotate/rotate=270/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/huerotate/dog.jpg <br />
+/imageproxy/img/huerotate/red=40/dog.jpg <br />
+/imageproxy/img/huerotate/green=10;blue=90/dog.jpg <br />
+
+
 ###meanremove
 Uses mean removal to achieve a "sketchy" effect
 
@@ -294,6 +332,16 @@ Parameter       |  Default  | Description
 /imageproxy/img/noise/dog.jpg <br />
 /imageproxy/img/noise/rate=40/dog.jpg <br />
 /imageproxy/img/noise/rate=80/dog.jpg <br />
+
+
+###oldcardboard
+Image filter to give the image an old cardboard look
+
+**Examples** <br />
+![Gaussian Blur Filter](http://elgervanboxtel.nl/imageproxy/img/oldcardboard/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/oldcardboard/dog.jpg <br />
 
 
 ###opacity
@@ -397,6 +445,24 @@ Parameter       |  Default  | Description
 /imageproxy/img/sepia/rate=60/dog.jpg <br />
 
 
+###semigrayscale
+Applies grayscale to an image, optionally add a grayscale percentage
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*rate*          | 75        | The grayscale rate
+
+**Examples** <br />
+![Sepia Filter](http://elgervanboxtel.nl/imageproxy/img/semigrayscale/dog.jpg)
+![Sepia Filter](http://elgervanboxtel.nl/imageproxy/img/semigrayscale/rate=20/dog.jpg)
+![Sepia Filter](http://elgervanboxtel.nl/imageproxy/img/semigrayscale/rate=90/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/semigrayscale/dog.jpg <br />
+/imageproxy/img/semigrayscale/rate=30/dog.jpg <br />
+/imageproxy/img/semigrayscale/rate=60/dog.jpg <br />
+
+
 ###sepiafast
 Apply sepia to the image (fast)
 
@@ -445,6 +511,36 @@ Sobel edge detect (extremely slow...)
 
 *URL* <br />
 /imageproxy/img/sobel/dog.jpg <br />
+
+
+###sobeledge
+Sobel edge enhance
+
+**Examples** <br />
+![Sobel Edge Detect Filter](http://elgervanboxtel.nl/imageproxy/img/sobeledge/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/sobeledge/dog.jpg <br />
+
+
+###truecolor
+Makes the image smoother.
+
+Parameter       |  Default  | Description
+----------------|-----------|---------------------------
+*primary*       | ffffff    | the primary color
+*secundary*     | 000000    | the secundary color
+
+
+**Examples** <br />
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/truecolor/dog.jpg)
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/truecolor/primary=B7121D;secundary=5774DB/dog.jpg)
+![Smooth Filter](http://elgervanboxtel.nl/imageproxy/img/truecolor/primary=C1C1C1;secundary=44C4BD/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/truecolor/dog.jpg <br />
+/imageproxy/img/truecolor/primary=B7121D;secundary=5774DB/dog.jpg <br />
+/imageproxy/img/truecolor/primary=C1C1C1;secundary=44C4BD/dog.jpg <br />
 
 
 ###vignette

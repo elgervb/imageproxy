@@ -48,6 +48,9 @@ class AppContext implements IAppContext
          * Options: rate:5|opacity:10
          */
         $router->add('^/img/([a-z]+)/?(.*)?/(.*\.[a-z]+)', function($filter, $optionsString, $image){
+            
+            ini_set('max_execution_time', 180);
+            
         	$image = Context::get()->basePath('/img/original/' . $image);
         	$controller = new \controllers\FilterController();
         	$method = str_replace(['-','_'], [''], $filter);
