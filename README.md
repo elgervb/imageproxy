@@ -29,6 +29,85 @@ Upload your image and call it through the image proxy API:
 
 
 
+## Thumbnails
+
+You can create thumbnails in several ways
+
+### centered
+create a thumbnail which is centered in the middle of the image
+
+Parameter       | Default   | Description
+----------------|-----------|---------------------------
+*width*         | 250       | The new width of the image in pixels
+*height*        | 250       | The new height of the image in pixels
+
+**Examples** <br />
+![Centered Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/centered/width=150;height=350/dog.jpg)
+![Centered Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/centered/width=350;height=250/dog.jpg)
+![Centered Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/centered/width=150;height=150/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/thumb/centered/width=150;height=350/dog.jpg <br />
+/imageproxy/img/thumb/centered/width=350;height=250/dog.jpg <br />
+/imageproxy/img/thumb/centered/width=150;height=150/dog.jpg <br />
+
+
+### max
+resize the image to a max width or height keeping proportions, thus restraining the image to a certain size
+
+Parameter       | Default   | Description
+----------------|-----------|---------------------------
+*width*         | 250       | The max width of the image in pixels
+*height*        | 250       | The max height of the image in pixels
+
+**Examples** <br />
+![Max Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/max/width=150;height=350/dog.jpg)
+![Max Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/max/width=350;height=250/dog.jpg)
+![Max Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/max/width=150;height=150/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/thumb/max/width=150;height=350/dog.jpg <br />
+/imageproxy/img/thumb/max/width=350;height=250/dog.jpg <br />
+/imageproxy/img/thumb/max/width=150;height=150/dog.jpg <br />
+
+
+### percentage
+reduce a image with a certain percentage
+
+Parameter       | Default   | Description
+----------------|-----------|---------------------------
+*percentage*    | 250       | The percentage to reduce the image with
+
+**Examples** <br />
+![Max Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/percentage/percentage=75/dog.jpg)
+![Max Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/percentage/percentage=50/dog.jpg)
+![Max Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/percentage/percentage=25/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/thumb/percentage/percentage=75/dog.jpg <br />
+/imageproxy/img/thumb/percentage/percentage=50/dog.jpg <br />
+/imageproxy/img/thumb/percentage/percentage=25/dog.jpg <br />
+
+
+### square
+
+Parameter       | Default   | Description
+----------------|-----------|---------------------------
+*width*         | 250       | The new width of the image in pixels
+*height*        | 250       | The new height of the image in pixels
+
+**Examples** <br />
+![Centered Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/square/width=350/dog.jpg)
+![Centered Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/square/width=250/dog.jpg)
+![Centered Thumb](http://elgervanboxtel.nl/imageproxy/img/thumb/square/width=150/dog.jpg)
+
+*URL* <br />
+/imageproxy/img/thumb/square/width=350/dog.jpg <br />
+/imageproxy/img/thumb/square/width=250/dog.jpg <br />
+/imageproxy/img/thumb/square/width=150/dog.jpg <br />
+
+
+
 ## Available Filters
 
 
