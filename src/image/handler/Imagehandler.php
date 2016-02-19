@@ -1,8 +1,8 @@
 <?php
-namespace image;
+namespace image\handler;
 
-use compact\handler\IHander;
 use imagemanipulation\ImageBuilder;
+use handler\IHander;
 
 class Imagehandler implements IHander
 {

@@ -1,5 +1,5 @@
 <?php
-namespace controllers;
+namespace image\controllers;
 
 use \SplFileInfo;
 

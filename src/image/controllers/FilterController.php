@@ -1,9 +1,9 @@
 <?php
-namespace controllers;
+namespace image\controllers;
 
 use imagemanipulation\ImageBuilder;
 use imagemanipulation\filter\ImageFilterFlip;
-use options\Options;
+use image\options\Options;
 
 class FilterController {
 

@@ -1,32 +1,47 @@
 <?php
-namespace controllers;
+namespace image\controllers;
 
-use compact\mvvm\impl\ViewModel;
 use compact\upload\UploadManager;
 use compact\upload\UploadOptions;
 use compact\Context;
 use compact\upload\UploadException;
+
 class UploadController
 {
-    public static function create(){
+
+    /**
+     * Create a new Uploadontroleler
+     * @return \image\controllers\UploadController
+     */
+    public static function create()
+    {
         return new UploadController();
     }
-    
+
     /**
      * Present the upload form to the user
+     * 
      * @return \compact\mvvm\impl\ViewModel
      */
-    public function form(){
+    public function form()
+    {
         return new ViewModel("upload.html");
     }
-    
+
     /**
-     * Upload the file and 
+     * Upload the file and
+     * 
      * @return \compact\mvvm\impl\ViewModel
      */
-    public function upload(){
+    public function upload()
+    {
         $options = new UploadOptions();
-        $options->setMimetypes(['image/jpg','image/jpeg', 'image/gif','image/png'])
+        $options->setMimetypes([
+            'image/jpg',
+            'image/jpeg',
+            'image/gif',
+            'image/png'
+        ])
             ->setAllowOverwrite(false)
             ->setMaxFiles(20)
             ->setMaxSize(5000000)
@@ -36,7 +51,7 @@ class UploadController
         
         try {
             $files = $upload->upload();
-        
+            
             if ($files->count() > 0) {
                 $file = $files->offsetGet(0);
                 $view->{'imagename'} = $file->getFilename();

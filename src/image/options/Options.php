@@ -1,5 +1,5 @@
 <?php
-namespace options;
+namespace image\options;
 
 class Options
 {

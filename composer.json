@@ -1,6 +1,16 @@
 {
-	"name" : "test",
+	"name" : "imageproxy",
 	"require" : {
-		"elgervb/imagemanipulation" : "1.2.0"
+		"elgervb/php-router" : "master-dev",
+		"elgervb/php-upload" : "master-dev",
+		"elgervb/php-http" : "master-dev",
+		"elgervb/php-view" : "master-dev",
+		"elgervb/php-handler" : "master-dev",
+		"elgervb/imagemanipulation" : "master-dev"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"image" : "src"
+		}
 	}
 }
